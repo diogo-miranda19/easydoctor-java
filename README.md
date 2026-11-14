@@ -1,6 +1,6 @@
 # EasyDoctor - Sistema de Diagnóstico Baseado em Estruturas de Dados
 
-> Projeto académico desenvolvido no âmbito da unidade curricular de **Algoritmos e Estruturas de Dados (AED)** em duplas  da Licenciatura em Engenharia Informática no IPB.
+> Projeto académico desenvolvido no âmbito da unidade curricular de **Algoritmos e Estruturas de Dados (AED)** em duplas  da Licenciatura em Engenharia Informática no UPB.
 ---
 
 ## Sobre o Projeto
