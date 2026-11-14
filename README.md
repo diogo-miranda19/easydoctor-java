@@ -1,22 +1,16 @@
 # EasyDoctor - Sistema de Diagnóstico Baseado em Estruturas de Dados
 
-> Projeto académico desenvolvido no âmbito da unidade curricular de **Algoritmos e Estruturas de Dados (AED)** da Licenciatura em Engenharia Informática no IPB.
-
+> Projeto académico desenvolvido no âmbito da unidade curricular de **Algoritmos e Estruturas de Dados (AED)** em duplas  da Licenciatura em Engenharia Informática no IPB.
 ---
 
-## 👥 Autores
-* **Trabalho realizado em dupla:** [O teu nome] & [Nome do colega]
-
----
-
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 O **EasyDoctor** é uma aplicação desenvolvida em **Java** cujo principal objetivo pedagógico não é recorrer a inteligência artificial moderna, mas sim **implementar estruturas de dados e coleções do zero** (sem depender das bibliotecas padrão do Java como `ArrayList` ou `HashMap`). 
 
 O programa simula um sistema de suporte à decisão médica, permitindo carregar sintomas e doenças a partir de um ficheiro de texto (`Data_EN.txt`), gerir coleções dinâmicas personalizadas e processar diagnósticos baseados nas escolhas do utilizador através da consola.
 
 ---
 
-## ⚙️ Arquitetura e Estruturas de Dados Implementadas
+## Arquitetura e Estruturas de Dados Implementadas
 
 O projeto está dividido em dois pacotes principais:
 
@@ -34,7 +28,7 @@ Implementação manual de estruturas fundamentais de gestão de memória e armaz
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 ### Pré-requisitos
 * **Java JDK** instalado (versão 17 ou superior recomendada).
@@ -48,7 +42,7 @@ Implementação manual de estruturas fundamentais de gestão de memória e armaz
 
 ---
 
-## 📂 Estrutura de Pastas
+## Estrutura de Pastas
 ```text
 trabAED/
 ├── src/
@@ -68,7 +62,7 @@ trabAED/
 
 ---
 
-## 💡 Conclusões e Aprendizagens
+## Conclusões e Aprendizagens
 
 O desenvolvimento do **EasyDoctor** foi uma etapa fundamental na consolidação das bases da engenharia de software e programação em Java:
 
