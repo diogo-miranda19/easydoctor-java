@@ -1,0 +1,8 @@
+Fever: sweating, pain, high fever
+Panic Attack: nervousness, sweating
+Cold: runny nose, cough, low fever
+Viral Infection: high fever, rash, swelling
+Whooping cough: cough, rash, high fever
+Scarlet fever: rash, high fever, coma
+Acid Reflux: chest pain, belching
+Heart Attack: chest pain, difficulty breathing
