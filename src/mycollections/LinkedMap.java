@@ -26,10 +26,6 @@ public class LinkedMap<K extends Comparable<K>, V> extends AbstractMap<K,V> {
         if(f==null) return null;
         else return f.getValue();
     }
-
-    public int getOrDefault(String illness, int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
     private class KeyIterator implements Iterator<K> {
         private Iterator<Entry<K,V>> it = list.iterator( );
         public boolean hasNext( ) { return it.hasNext( ); }

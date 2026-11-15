@@ -24,7 +24,7 @@ public class EasyDoctor {
         try (Scanner scanner = new Scanner(inputStream)) {
             readFile(scanner);
         } catch (Exception e) {
-            System.err.println("Error initializing AIDoctor: " + e.getMessage());
+            System.err.println("Error initializing EasyDoctor: " + e.getMessage());
         }
     }
 
@@ -32,8 +32,7 @@ public class EasyDoctor {
     public void readFile(Scanner data) {
         while (data.hasNextLine()) {
             String line = data.nextLine().trim();
-            // System.out.println("Reading line: " + line); // Debug statement
-
+            
             // Skip empty or incorrectly formatted lines
             if (line.isEmpty() || !line.contains(":")) {
                 System.err.println("Invalid or empty line, skipping: " + line);
@@ -57,7 +56,6 @@ public class EasyDoctor {
                     String trimmedSymptom = symptom.trim().toLowerCase();
                     if (!symptom.isEmpty()) {
                         symptomList.addLast(trimmedSymptom);
-                        // System.out.println("Added symptom: " + trimmedSymptom); // Debug statement
                     }
                 }
 
@@ -188,7 +186,6 @@ public class EasyDoctor {
         boolean found = false; // Flag to track if any illness matches
         for (String illness : diseaseCount.keySet()) {
             int count = diseaseCount.get(illness);
-            //System.out.println("Checking illness: " + illness + ", count: " + count);
             if (count >= nSymptoms) {
                 System.out.println("\tDisease: " + illness + " matches " + count + " symptoms");
                 found = true; // Set flag to true if condition is met

@@ -3,14 +3,6 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class SinglyLinkedList<E> implements Iterable<E> {
-
-    public void clear() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public boolean contains(String symptom) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
     private static class Node<E> {
         private E element;
         private Node<E> next;
