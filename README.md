@@ -1,70 +1,72 @@
-# EasyDoctor - Data Structures-Based Diagnostic System
+# EasyDoctor - Sistema de Diagnóstico Baseado em Estruturas de Dados
 
-> Academic project developed for the **Algorithms and Data Structures (AED)** course in pairs as part of the Bachelor's degree in Computer Engineering at **UPB (Universidade Politécnica de Bragança)**.
-
----
-
-## About the Project
-**EasyDoctor** is a console application developed in **Java** whose main pedagogical goal is **implementing data structures and collections from scratch** (without relying on standard Java libraries such as `ArrayList` or `HashMap`).
-
-The program simulates a medical decision-support system, allowing users to load symptoms and illnesses from a text dataset (`Data_EN.txt`), manage custom dynamic collections in memory, and process diagnostic matches based on user input.
+> Projeto académico desenvolvido no âmbito da unidade curricular de **Algoritmos e Estruturas de Dados (AED)** em duplas da Licenciatura em Engenharia Informática no **UPB (Universidade Politécnica de Bragança)**.
 
 ---
 
-## Architecture and Implemented Data Structures
+## Sobre o Projeto
+O **EasyDoctor** é uma aplicação de consola desenvolvida em **Java** cujo principal objetivo pedagógico é **implementar estruturas de dados e coleções do zero** (sem depender das bibliotecas padrão do Java como `ArrayList` ou `HashMap`).
 
-The project is organized into two main packages:
-
-### 1. `mycollections` (Core / Data Structures)
-Manual implementation of fundamental memory management and storage structures:
-- **`SinglyLinkedList`**: Singly linked list with internal node support (`Node`) and a custom iterator (`SLLIterator`).
-- **`DoublyLinkedList`**: Doubly linked list that allows traversing the elements in both directions (`DLLIterator`).
-- **`SortedDoublyLinkedList`**: Variant of the doubly linked list that automatically keeps elements sorted by insertion/comparison order.
-- **`Map`, `AbstractMap` & `LinkedMap`**: Manually implemented key-value associative structure to enable medical data lookups and indexing.
-
-### 2. `principal` (Application Logic)
-- **`EasyDoctor.java`**: Main class managing user interaction logic, file parsing, symptom menu display, and information matching for diagnosis.
-- **`Main.java`**: Application entry point.
-- **`Data_EN.txt`**: Text file (dataset) containing illnesses and their respective symptoms in English.
+O programa simula um sistema de suporte à decisão médica, permitindo carregar sintomas e doenças a partir de um ficheiro de texto (`Data_EN.txt`), gerir coleções dinâmicas personalizadas em memória e processar correspondências de diagnóstico com base no *input* do utilizador.
 
 ---
 
-## How to Run the Project
+## Arquitetura e Estruturas de Dados Implementadas
 
-### Prerequisites
-- **Java JDK** installed (version 17 or higher recommended).
-- **Apache NetBeans IDE** (or another compatible Java editor).
+O projeto está dividido em dois *packages* principais:
 
-### Steps to Run in NetBeans:
-1. Open **Apache NetBeans**.
-2. Go to **File** > **Open Project...** and select the project root folder (`trabAED`).
-3. In the left panel (*Projects*), expand `src` > `principal` > `Main.java`.
-4. Right-click `Main.java` and select **Run File** (or press `Shift + F6`).
+### 1. `mycollections` (Estruturas de Dados)
+Implementação manual de estruturas fundamentais de gestão de memória e armazenamento:
+- **`SinglyLinkedList`**: *Singly linked list* com suporte a nós internos (`Node`) e um *iterator* personalizado (`SLLIterator`).
+- **`DoublyLinkedList`**: *Doubly linked list* que permite percorrer os elementos nos dois sentidos (`DLLIterator`).
+- **`SortedDoublyLinkedList`**: Variante da *doubly linked list* que mantém automaticamente os elementos ordenados por ordem de inserção/comparação.
+- **`Map`, `AbstractMap` & `LinkedMap`**: Estrutura associativa *key-value* implementada manualmente para permitir *lookups* e indexação de dados médicos.
+
+### 2. `principal` (Lógica de Aplicação)
+- **`EasyDoctor.java`**: Classe principal que gere a lógica de interação com o utilizador, carregamento de ficheiros, exibição de menus de sintomas e cruzamento de informação para diagnóstico.
+- **`Main.java`**: *Entry point* da aplicação.
+- **`Data_EN.txt`**: Ficheiro de texto (*dataset*) contendo as doenças e os respetivos sintomas em inglês.
 
 ---
 
-## Project Structure
+## Como Executar o Projeto
+
+### Pré-requisitos
+- **Java JDK** instalado (versão 17 ou superior recomendada).
+- **Apache NetBeans IDE** (ou outro editor Java compatível).
+
+### Passos para Executar no NetBeans:
+1. Abre o **Apache NetBeans**.
+2. Vai a **File** > **Open Project...** e seleciona a pasta raiz do projeto (`trabAED`).
+3. No painel esquerdo (*Projects*), expande `src` > `principal` > `Main.java`.
+4. Clica com o botão direito em `Main.java` e seleciona **Run File** (ou prime `Shift + F6`).
+
+---
+
+## Estrutura de Pastas
 ```text
 trabAED/
 ├── src/
-│   ├── mycollections/       # Data structures implemented from scratch
+│   ├── mycollections/       # Estruturas de dados implementadas do zero
 │   │   ├── AbstractMap.java
 │   │   ├── DoublyLinkedList.java
 │   │   ├── LinkedMap.java
 │   │   ├── Map.java
 │   │   ├── SinglyLinkedList.java
 │   │   └── SortedDoublyLinkedList.java
-│   └── principal/           # Program logic
+│   └── principal/           # Lógica do programa
 │       ├── Data_EN.txt
 │       ├── EasyDoctor.java
 │       └── Main.java
 └── README.md
 ```
 
-## Conclusions
-Developing **EasyDoctor** was a foundational step in consolidating software engineering and Java programming principles:
+---
 
-- **Mastery of Dynamic Structures:** Building linked lists and maps without using native Java collections provided a solid understanding of memory references, dynamic node allocation, and pointer management.
-- **Iterator Design Pattern & Generics:** Using generic types (`<E>`, `<K, V>`) and implementing custom iterators ensured that collections were reusable for any data type and cleanly with `for-each` loops.
-- **Complexity Analysis:** The project enabled practical evaluation of the real performance impact of each operation (e.g., $O(n)$ sequential traversal in linked lists vs. $O(1)$ controlled insertion at extremities).
-- **Teamwork and Modularity:** The clear separation between the data structures package (`mycollections`) and the application logic (`principal`) facilitated pair collaboration, allowing each component to be developed and tested independently.
+## Conclusões e Aprendizagens
+O desenvolvimento do **EasyDoctor** foi uma etapa fundamental na consolidação das bases de engenharia de software e programação em Java:
+
+- **Domínio de Estruturas Dinâmicas:** Construir *linked lists* e *maps* sem recorrer às *collections* nativas do Java permitiu compreender a fundo as referências de memória, a alocação dinâmica de *nodes* e a gestão de apontadores.
+- **Padrão de Criação do Iterator & Generics:** A utilização de tipos genéricos (`<E>`, `<K, V>`) e a implementação de *iterators* personalizados garantiram que as coleções fossem reutilizáveis para qualquer tipo de dado e percorríveis de forma limpa com ciclos `for-each`.
+- **Análise de Complexidade:** O projeto permitiu avaliar o impacto real de desempenho de cada operação (ex.: acesso sequencial $O(n)$ nas *linked lists* vs. inserção controlada $O(1)$ nas extremidades).
+- **Trabalho em Equipa e Modularidade:** A divisão clara entre o *package* das estruturas (`mycollections`) e a lógica da aplicação (`principal`) facilitou a colaboração em dupla, permitindo desenvolver e testar cada componente de forma independente.
