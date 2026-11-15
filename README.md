@@ -24,7 +24,7 @@ Implementação manual de estruturas fundamentais de gestão de memória e armaz
 
 ### 2. `principal` (Lógica da Aplicação)
 * **`EasyDoctor.java`**: Classe principal que gere a lógica de interação com o utilizador, leitura de ficheiros, exibição de menus de sintomas e matching de informação para diagnostico.
-* **`Main.java`**: Enrtry Point da aplicação.
+* **`Main.java`**: Entry Point da aplicação.
 * **`Data_EN.txt`**: Ficheiro de texto (dataset) contendo as doenças e os respetivos sintomas em inglês.
 
 ---
