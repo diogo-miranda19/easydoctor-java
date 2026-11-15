@@ -5,7 +5,7 @@
 ---
 
 ## Sobre o Projeto
-O **EasyDoctor** é uma aplicação desenvolvida em **Java** cujo principal objetivo pedagógico não é recorrer a inteligência artificial moderna, mas sim **implementar estruturas de dados e coleções do zero** (sem depender das bibliotecas padrão do Java como `ArrayList` ou `HashMap`). 
+O **EasyDoctor** é uma aplicação desenvolvida em **Java** cujo principal objetivo pedagógico é **implementar estruturas de dados e coleções do zero** (sem depender das bibliotecas padrão do Java como `ArrayList` ou `HashMap`). 
 
 O programa simula um sistema de suporte à decisão médica, permitindo carregar sintomas e doenças a partir de um ficheiro de texto (`Data_EN.txt`), gerir coleções dinâmicas personalizadas e processar diagnósticos baseados no input do utilizador através da consola.
 
